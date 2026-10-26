@@ -47,6 +47,7 @@ func run(ctx context.Context, args []string, getenv func(string) string) error {
 		return fmt.Errorf("parse flags: %w", err)
 	}
 
+	select {}
 	// Cancelled on Ctrl+C or SIGTERM; drives the shutdown below.
 	ctx, stop := signal.NotifyContext(ctx, os.Interrupt, syscall.SIGTERM)
 	defer stop()
