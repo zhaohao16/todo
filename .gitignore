@@ -1,0 +1,9 @@
+/todo-api
+/todo-api.exe
+*.test
+coverage.out
+coverage.html
+.gocache/
+.gotmp/
+.idea/
+.vscode/
